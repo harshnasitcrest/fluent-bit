@@ -39,11 +39,11 @@
 #define SELECTOR_NOTOUCH   1
 #define SELECTOR_FAILURE   2
 
-enum _logical_op{
+enum _selector_logical_op{
     SELECTOR_LOGICAL_OP_LEGACY,
     SELECTOR_LOGICAL_OP_OR,
     SELECTOR_LOGICAL_OP_AND
-} logical_op;
+} selector_logical_op;
 
 struct selector_ctx {
     struct mk_list rules;
