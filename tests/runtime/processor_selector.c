@@ -38,6 +38,10 @@ static int cb_count_metrics_msgpack(void *record, size_t size, void *data)
         }
     }
 
+    if (record) {
+        flb_free(record);
+    }
+
     /* destroy cmt context */
     cmt_destroy(cmt);
 
