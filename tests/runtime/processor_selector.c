@@ -84,8 +84,8 @@ void flb_test_selector_regex(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -139,8 +139,8 @@ void flb_test_selector_exclude(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -206,8 +206,8 @@ void flb_test_selector_multi_regex(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -282,8 +282,8 @@ void flb_test_selector_multi_exclude(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -442,8 +442,8 @@ void flb_test_selector_AND_regex(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -522,8 +522,8 @@ void flb_test_selector_OR_regex(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -604,8 +604,8 @@ void flb_test_selector_AND_exclude(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
@@ -686,8 +686,8 @@ void flb_test_selector_OR_exclude(void)
 
     ctx = flb_create();
     flb_service_set(ctx,
-                    "Flush", "0.500000000",
-                    "Grace", "1",
+                    "Flush", "0.200000000",
+                    "Grace", "2",
                     NULL);
 
     proc = flb_processor_create(ctx->config, "unit_test", NULL, 0);
