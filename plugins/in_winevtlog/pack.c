@@ -403,7 +403,7 @@ void winevtlog_pack_xml_event(WCHAR *system_xml, WCHAR *message,
     }
 
 
-    ret = flb_log_event_encoder_append_body_cstring(ctx->log_encoder, "System");
+    ret = flb_log_event_encoder_append_body_cstring(ctx->log_encoder, "Event");
 
     if (pack_wstr(ctx, system_xml)) {
         pack_nullstr(ctx);
